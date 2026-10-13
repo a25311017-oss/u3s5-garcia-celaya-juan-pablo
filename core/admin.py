@@ -1,7 +1,7 @@
-# admin: el módulo que arma el panel /admin automáticamente
+# admin: el módulo del panel /admin
 from django.contrib import admin
-# Servicio: el modelo que escribiste en el paso 02, importado desde este mismo directorio
+# Servicio: el modelo de esta misma app
 from .models import Servicio
 
-# register: le dice a Django "mostrá este modelo en el panel /admin, con un CRUD ya armado"
+# register: registro simple, sin personalizar nada
 admin.site.register(Servicio)
